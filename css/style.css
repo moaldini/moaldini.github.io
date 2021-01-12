@@ -1,8 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    line-height: 1;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* The side navigation menu */
 .sidebar {
     margin: 0;
-    padding: 0;
-    width: 200px;
+    padding: 10px;
+    width: 280px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -10,11 +19,13 @@
   }
   
   /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+  .sidebar li {
+    text-align: left;
+    padding-left: 10px;
+  }
+  .sidebar li ul li{
+    text-align: left;
+    padding-left: 20px;
   }
   
   /* Active/current link */
@@ -28,10 +39,25 @@
     background-color: #555;
     color: white;
   }
-  
+  table {
+      font-size: 13px;
+      border-collapse: collapse;
+  }
+  table caption {
+      text-align: center;
+      font-size: 18px;
+      padding: 15px;
+      font-weight: bold;
+  }
+  table thead tr { background-color: #4CAF50;}
+  table tbody tr:nth-child(1),table tbody tr:nth-child(3) {
+      background-color:#DDD;
+  }
+  th { font-weight: bold; padding: 5px; border: 1px solid #000;}
+  td { text-align: center; padding: 5px; border: 1px solid #000;}
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
-    margin-left: 200px;
+    margin-left: 300px;
     padding: 1px 16px;
     height: 1000px;
   }

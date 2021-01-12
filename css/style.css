@@ -6,6 +6,20 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+h1 {
+  font-size: 22px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 18px;
+}
+header {
+  width: 100%;
+  text-align: center;
 }
 /* The side navigation menu */
 .sidebar {
@@ -17,16 +31,23 @@ body {
     height: 100%;
     overflow: auto;
   }
-  
+ .sidebar img {
+   border-radius: 50%;
+   text-align: center;
+ } 
   /* Sidebar links */
+  h1,h2,h3,p {
+    padding: 10px 0 10px 0;
+  }
+  .sidebar ul {
+    list-style: circle;
+    padding: 10px 0 10px 20px;
+  }
   .sidebar li {
     text-align: left;
     padding-left: 10px;
   }
-  .sidebar li ul li{
-    text-align: left;
-    padding-left: 20px;
-  }
+  
   
   /* Active/current link */
   .sidebar a.active {
@@ -59,7 +80,7 @@ body {
   div.content {
     margin-left: 300px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 500px;
   }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */

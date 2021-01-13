@@ -1,12 +1,10 @@
 * {
-    margin: 0px;
-    padding: 0px;
     font-size: 100%;
     line-height: 1;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 h1 {
   font-size: 22px;
@@ -20,6 +18,9 @@ h3{
 header {
   width: 100%;
   text-align: center;
+}
+.clear {
+  clear: both;
 }
 /* The side navigation menu */
 .sidebar {
@@ -71,7 +72,7 @@ header {
       font-weight: bold;
   }
   table thead tr { background-color: #4CAF50;}
-  table tbody tr:nth-child(1),table tbody tr:nth-child(3) {
+  table tbody tr:nth-child(odd) {
       background-color:#DDD;
   }
   th { font-weight: bold; padding: 5px; border: 1px solid #000;}
@@ -85,6 +86,47 @@ header {
   footer div {
     text-align: right;
     padding: 10px;
+  }
+  .row { width: 100%;}
+  ul {
+    list-style: circle;
+    padding: 0px 0 10px 20px;
+}
+li {
+    text-align: left;
+    line-height: 15px;
+}
+dl {
+    border: 0;
+    padding: 0.5em;
+  }
+  dt {
+    float: left;
+    clear: left;
+    width: 50px;
+    text-align: left;
+    font-weight: bold;
+    color: green;
+    padding: 10px 0 0.5em 0;
+  }
+  dt::after {
+    content: ":";
+  }
+  dd {
+    margin: 0 0 0 60px;
+    padding: 10px 0 0.5em 0;
+  }
+  .column {
+    float: left;
+    width: 48%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {

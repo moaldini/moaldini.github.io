@@ -5,13 +5,18 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="css/style.css" rel="stylesheet">
+   <link href="css/styleme.css" rel="stylesheet">
 </head>
 <body>
 <!-- The sidebar -->
 <div class="sidebar">
    <img src="images/me.jpeg" alt="Mohammed AlDini">
    <h2>Mohammed Hassan ALDINI</h2>
-   <p>ID: 611930</p>
+   <dl>
+      <dt>ID</dt> <dd>611930</dd>
+      <dt>Term</dt> <dd>Spring 2021</dd>
+      <dt>GPA</dt> <dd>MS Computer Science</dd>
+   </dl>
    <ul>
       <li>Lecture01: Web HTML
          <ul>
@@ -27,26 +32,65 @@
       
 
    </ul>
- </div>
- 
- <!-- Page content -->
- <div class="content">
-    <header>
-    <h1>Maharishi International University</h1>
-    <h3>Web Application Programming CS472</h3>
-    <h4>About ME</h4>
-   </header>
-   
- </div>
+</div> 
+<!-- Page content -->
+<div class="content">
+   <div>
+      <h1>About Mohammed AlDini</h1>
+      <p>I hope you can tell that I love Software Engineering! I love the entire process, from concepting, to layout. It's exciting to see an idea come to life. Love working with others to make projects that are unique and memorable. </p>
+      <hr>
+   </div>
 
- 
-  <footer>
+   <div id="myClasses">
+      <h1>My Classes</h1>
+      <ul>
+         <li>STC506A: STC Pt 1- ComPro (Science and Technology of Consciousness)</li>
+         <li>CS401: Modern Programming</li>
+         <li>CS472: Web Application Programming</li>
+      </ul>
+   </div>
+
+   <div id="favDiv">
+      <h1>My Favorites</h1>
+      <dl class="floated">
+         <dt>Movie</dt>
+         <dd><a href="https://www.imdb.com/video/vi2412625689?ref_=nv_sr_srsg_1" target="_blank">The Matrix 4 (2019)</a></dd>
+         
+         <dt>Book</dt>
+         <dd><a href="https://quran.com/" target="_blank">The Quran: The Holy Book of Islam</a></dd>
+         
+         <dt>TV</dt>
+         <dd><a href="https://www.mta.tv/" target="_blank">MTA | Muslim Television Ahmadiyya International</a></dd>
+       </dl>
+   </div>
+
+
+
+
+   <div id="imagesDiv">
+      <h1>My Status / Faces</h1>
+      <div class="row">
+         <div class="column">
+         <img src="images/sad.jpg" alt="Sad" style="width:100%">
+         </div>
+         <div class="column">
+         <img src="images/happy.jpg" alt="Happy" style="width:100%">
+         </div>
+      </div>
+   </div>
+
+</div>
+
+<footer>
    <div> 
       <a href="https://validator.w3.org/check/referer" target="_blank"> 
-         <img src="images/html5_validator.png" alt="Validate" /> 
+         <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="HTML Validate" /> 
       </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank"> 
+         <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="CSS Validate" /> 
+      </a>
+      
    </div>
-  </footer>
-   
+</footer>
 </body>
 </html>

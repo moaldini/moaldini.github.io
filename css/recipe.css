@@ -1,9 +1,13 @@
 body {
-    color: #404040;
-    font-size: 11pt;
+    color: #404040 !important;
+    font-size: 11pt !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+a {
+    color: #A4A400;
 }
 .title {
-    font-family: 'Lucida Sans Unicode', Helvetica, Arial;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial !important;
     width: 100%;
     padding: 10px;
     background-color: #F0F0F0;
@@ -14,6 +18,29 @@ body {
 header {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 22pt;
+    font-size: 22pt !important;
     font-weight: bold;
 }
+div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  p {
+      padding-bottom: 5px !important;
+      margin: 0px;
+  }
+  h1 {
+      text-align: left;
+      font-size: 18pt;
+  }
+  abbr {
+      text-decoration: underline;
+  }
+  pre {
+      background-color: yellow;
+      margin: 10px 20px 10px 20px;
+      padding: 0px;
+      font-size: 11pt !important;
+      font-family: Georgia, 'Times New Roman', Times, serif !important;
+  }

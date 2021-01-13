@@ -2,6 +2,7 @@ body {
     color: #404040 !important;
     font-size: 11pt !important;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
+    background: #FFF url(../images/silverware.jpg) repeat;
 }
 a {
     color: #A4A400;
@@ -38,9 +39,19 @@ div.content {
       text-decoration: underline;
   }
   pre {
-      background-color: yellow;
+      font-style: italic;
+      background-color: #FFFFA8;
       margin: 10px 20px 10px 20px;
       padding: 0px;
       font-size: 11pt !important;
       font-family: Georgia, 'Times New Roman', Times, serif !important;
+  }
+  .footer {
+      margin-top: 20px;
+  }
+  .footer img {
+      height: 25px;
+  }
+  ul {
+    list-style-image: url('../images/pie_bullet.png');
   }

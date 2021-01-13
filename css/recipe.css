@@ -1,0 +1,19 @@
+body {
+    color: #404040;
+    font-size: 11pt;
+}
+.title {
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial;
+    width: 100%;
+    padding: 10px;
+    background-color: #F0F0F0;
+    color: #A4A400;
+    font-size: 18pt;
+    text-decoration: underline;
+}
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}

@@ -15,6 +15,6 @@ li {
     background-color: lightblue;
 }
 
-img {
+#imagesDiv img {
     border-radius: 50%;
 }

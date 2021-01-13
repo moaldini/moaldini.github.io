@@ -18,3 +18,7 @@ li {
 #imagesDiv img {
     border-radius: 50%;
 }
+hr { border-style: dotted;}
+#favDiv h1 {
+    border: 1px dashed blueviolet;
+}

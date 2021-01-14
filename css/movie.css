@@ -57,10 +57,9 @@ body {
 .leftItem{
     width: 47%;
     float: left;
-    
     box-sizing: border-box;
 }
-.leftItem p:first {
+.reviewTxt {
     background-color: #E8DC9B;
     border: 2px solid gray;
     border-radius: 10px;

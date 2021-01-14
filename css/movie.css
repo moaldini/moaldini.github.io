@@ -67,7 +67,9 @@ body {
     padding: 5px;
     font-weight: bold;
 }
-
+.leftItem p img {
+    float: left;
+}
 #footer {
     position: fixed;
     bottom: 4px;

@@ -57,13 +57,18 @@ body {
 .leftItem{
     width: 47%;
     float: left;
+    
+    box-sizing: border-box;
+}
+.leftItem p:first {
     background-color: #E8DC9B;
     border: 2px solid gray;
     border-radius: 10px;
     margin: 1%;
     padding: 5px;
-    box-sizing: border-box;
+    font-weight: bold;
 }
+
 #footer {
     position: fixed;
     bottom: 4px;

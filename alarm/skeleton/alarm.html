@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Alarm</title>
+	<link href="./alarm.css" type="text/css" rel="stylesheet">
+	<script>
+		window.onload = () => {
+			var btnElem = document.getElementById('go');
+			btnElem.onclick = alarm;
+		}
+		function alarm(){
+			let min = document.getElementById('min').value;
+			min = ((min !== null && parseInt(min) !== NaN && parseInt(min) > 0)?parseInt(min):0);
+
+			let sec = document.getElementById('sec').value;
+			sec = ((sec !== null && parseInt(sec) !== NaN && parseInt(sec) > 0)?parseInt(sec):0);
+			
+			let totalSecond = sec + (min * 60);
+			let interval = setInterval(() => {
+				//console.log(totalSecond);
+				totalSecond--;
+				document.getElementById('min').value = parseInt(totalSecond / 60);
+				document.getElementById('sec').value = parseInt(totalSecond % 60);
+				if(totalSecond==0) {
+					document.body.style.background = "red";
+					clearInterval(interval);
+				}
+			}, 1000);
+			//for(let i = 1;i <= sec;i++) {
+				//setTimeout(() => { document.getElementById('sec').value = sec-i;},1000*i);
+			//}
+			//clearTimeout();
+			/*if(min > 0){
+				for(let j = 1;j <= min;j++){
+					
+					for(let s = 1;s <= 60;s++) {
+						setTimeout(() => { document.getElementById('sec').value = 60-s;},1000*i);
+					}
+				}
+			}*/
+		}
+		function setTime() {
+			++totalSeconds;
+			secondsLabel.innerHTML = pad(totalSeconds % 60);
+			minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+		}
+	</script>
+</head>
+<body>
+	<h1>
+		<img id="logo" src="./timer.gif" width="150px" height="150px" alt="UW CSE logo">
+		Timer Alarm
+	</h1>
+
+	<div>
+		<input id="min" type="text"> min
+	</div>
+
+	<div>
+		<input id="sec" type="text"> sec
+	</div>
+
+	<div>
+		<button id="go">Go</button>
+	</div>
+</body>
+
+</html>

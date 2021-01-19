@@ -1,0 +1,15 @@
+* {
+    clear: both;
+    overflow:auto;
+    box-sizing: border-box;
+}
+body {
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+fieldset legend {
+    font-weight: bold;
+}
+textarea {
+    font-size: 12pt;
+}

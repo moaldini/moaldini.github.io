@@ -1,0 +1,42 @@
+body {
+	font-family: sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+	font-size: 32pt;
+	margin: 0;
+}
+
+textarea {
+	font-family: monospace;
+	font-size: 12pt;
+	height: 100px;
+	width: 90%;
+}
+
+fieldset {
+	border: 5px solid black;
+	border-radius: 10px;
+	display: inline;
+	vertical-align: top;
+}
+legend {
+    text-transform: capitalize;
+}
+fieldset div {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+button, select{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+p {
+	text-align: right;
+}

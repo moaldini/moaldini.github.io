@@ -27,23 +27,6 @@
 					clearInterval(interval);
 				}
 			}, 1000);
-			//for(let i = 1;i <= sec;i++) {
-				//setTimeout(() => { document.getElementById('sec').value = sec-i;},1000*i);
-			//}
-			//clearTimeout();
-			/*if(min > 0){
-				for(let j = 1;j <= min;j++){
-					
-					for(let s = 1;s <= 60;s++) {
-						setTimeout(() => { document.getElementById('sec').value = 60-s;},1000*i);
-					}
-				}
-			}*/
-		}
-		function setTime() {
-			++totalSeconds;
-			secondsLabel.innerHTML = pad(totalSeconds % 60);
-			minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
 		}
 	</script>
 </head>

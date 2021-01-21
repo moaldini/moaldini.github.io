@@ -1,6 +1,6 @@
-(function() {
+(function() {//IIFE
     "use strict";
-    var bankingAccount = function() {
+    var bankingAccount = function() {//Object factory
         var accountInfoList = [];
         function Account(name, deposit) {
             this.name = name;

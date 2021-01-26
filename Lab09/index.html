@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>AJAX Assignments</title>
-    <script src="script.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
 <div class="container">    
@@ -24,27 +24,14 @@
                     <button id="showPosts" class="btn btn-warning">Show User Posts</button>
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-md-12">
-                    <div id="output" class=""></div>
+                    <div id="output" class="p-2 mt-2"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script>
-    var baseUrl = 'http://jsonplaceholder.typicode.com/';
-    function showComment(id){
-        document.querySelector('#output').innerHTML = ""; 
-        if (!id) return;
-        fetch(baseUrl+'comments?postId='+id)
-            .then(res=>res.json())
-            .then(data=>{
-                var p = document.createElement('p');
-                data.forEach(c=>p.innerHTML += c.body+'</br>');
-            });
-            document.querySelector('#output').appendChild(p);
-    }
-</script>
 </body>
 </html>

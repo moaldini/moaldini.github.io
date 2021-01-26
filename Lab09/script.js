@@ -8,6 +8,7 @@
     btnShowPosts.addEventListener('click', showPosts);
     
     function showUser(){
+        alert(1)
         document.querySelector('#output').innerHTML = ""; 
         let id = userId.value;
         if (!id) return;
